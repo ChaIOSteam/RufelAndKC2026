@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//KC Rose and Rufel//Wedding Invitation//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:kc-rufel-wedding-20261128@wedding-invitation
+DTSTAMP:20261018T000000Z
+DTSTART:20261128T070000Z
+DTEND:20261128T140000Z
+SUMMARY:KC Rose & Rufel's Wedding
+LOCATION:Cozy Cabin\, Brgy. Kalasan\, Pagadian City
+DESCRIPTION:Ceremony 3:00 PM\; Early dinner 4:30 PM\; After party 5:00 PM 
+ onwards.\nDress code: Burgundy and Navy Blue.\nPlease bring swimwear - we
+  have pool access!
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:KC Rose & Rufel's wedding is tomorrow!
+END:VALARM
+END:VEVENT
+END:VCALENDAR
