@@ -53,6 +53,8 @@
   /* Photos are shown black & white to match the inspiration.
      For full color, set:  --photo-filter: none;  */
   --photo-filter: grayscale(1) contrast(1.06) brightness(0.97);
+  /* The venue photo has its own switch. For its natural blue sky and pool, set:  --venue-photo-filter: none;  */
+  --venue-photo-filter: var(--photo-filter);
 
   --gutter: 1rem;
   --page-max: 32.5rem;
@@ -652,17 +654,14 @@ a {
   margin-top: 1.5rem;
   border-radius: 14px;
   overflow: hidden;
-  aspect-ratio: 400 / 270;
+  aspect-ratio: 4 / 3;
   background: var(--navy-soft);
 }
-.venue__photo svg,
 .venue__photo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-.venue__photo img {
-  filter: var(--photo-filter);
+  filter: var(--venue-photo-filter);
 }
 
 /* =========================================================

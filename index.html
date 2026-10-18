@@ -250,55 +250,17 @@
 
           <a class="btn btn--navy" href="https://www.google.com/maps/search/?api=1&amp;query=Cozy+Cabin+Kalasan+Pagadian+City" target="_blank" rel="noopener noreferrer">How to get there</a>
 
-          <!--
-            PLACEHOLDER — venue photo not available yet.
-            To use a real photo, delete this <figure> and put in its place:
-              <figure class="venue__photo"><img src="assets/img/venue.jpg" width="960" height="640" loading="lazy" alt="The Cozy Cabin"></figure>
-          -->
-          <figure class="venue__photo" role="img" aria-label="Illustration of a cabin among pine trees under a night sky">
-            <svg viewBox="0 0 400 270" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
-              <defs>
-                <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0" stop-color="#0c1a33"/><stop offset="1" stop-color="#3a4d78"/>
-                </linearGradient>
-                <radialGradient id="glow" cx=".5" cy=".5" r=".5">
-                  <stop offset="0" stop-color="#f4d58d" stop-opacity=".55"/><stop offset="1" stop-color="#f4d58d" stop-opacity="0"/>
-                </radialGradient>
-              </defs>
-              <rect width="400" height="270" fill="url(#sky)"/>
-              <g fill="#f2ece0">
-                <circle cx="318" cy="52" r="17"/>
-                <circle cx="60" cy="40" r="1.4"/><circle cx="110" cy="70" r="1"/><circle cx="170" cy="32" r="1.4"/><circle cx="230" cy="58" r="1"/><circle cx="268" cy="24" r="1.2"/><circle cx="372" cy="104" r="1"/><circle cx="24" cy="98" r="1"/><circle cx="140" cy="108" r=".9"/>
-              </g>
-              <circle cx="310" cy="48" r="15" fill="#3a4d78" opacity=".35"/>
-              <path d="M0 168L52 126l46 34 52-46 58 50 62-44 64 48 66-36v90H0z" fill="#27385f"/>
-              <path d="M0 196l60-40 54 30 64-34 70 36 60-30 92 40v72H0z" fill="#182a4e"/>
-              <rect y="214" width="400" height="56" fill="#0c1a33"/>
-              <ellipse cx="200" cy="190" rx="120" ry="60" fill="url(#glow)"/>
-              <!-- cabin -->
-              <rect x="150" y="170" width="100" height="52" fill="#ece3d1"/>
-              <path d="M150 182h100M150 194h100M150 206h100" stroke="#b9ae97" stroke-width="1.2"/>
-              <path d="M138 174L200 126l62 48z" fill="#6c1d31"/>
-              <rect x="226" y="132" width="11" height="22" fill="#4d1423"/>
-              <rect x="186" y="190" width="24" height="32" rx="1" fill="#14264a"/>
-              <circle cx="205" cy="207" r="1.4" fill="#f4d58d"/>
-              <rect x="160" y="184" width="19" height="17" fill="#f4d58d"/>
-              <path d="M169.5 184v17M160 192.5h19" stroke="#6c1d31" stroke-width="1.2"/>
-              <rect x="222" y="184" width="19" height="17" fill="#f4d58d"/>
-              <path d="M231.5 184v17M222 192.5h19" stroke="#6c1d31" stroke-width="1.2"/>
-              <path d="M186 222l-14 48h56l-14-48z" fill="#1b2f57" opacity=".7"/>
-              <!-- pines -->
-              <g fill="#08122a">
-                <path d="M56 232l22-64 22 64zM64 190l14-40 14 40zM69 164l9-28 9 28z"/>
-                <path d="M104 238l18-52 18 52zM110 206l12-34 12 34z"/>
-                <path d="M300 238l18-52 18 52zM306 206l12-34 12 34z"/>
-                <path d="M338 232l24-70 24 70zM346 188l16-44 16 44zM352 160l10-30 10 30z"/>
-              </g>
-              <!-- pool ripples -->
-              <g fill="none" stroke="#7f93bf" stroke-width="1.1" stroke-linecap="round" opacity=".8">
-                <path d="M120 250q10-5 20 0t20 0 20 0M214 252q10-5 20 0t20 0 20 0"/>
-              </g>
-            </svg>
+          <figure class="venue__photo">
+            <picture>
+              <source type="image/webp"
+                      srcset="assets/img/venue-480.webp 480w, assets/img/venue-720.webp 720w, assets/img/venue-960.webp 960w"
+                      sizes="(min-width: 520px) 412px, calc(100vw - 5rem)">
+              <img src="assets/img/venue-720.jpg"
+                   srcset="assets/img/venue-480.jpg 480w, assets/img/venue-720.jpg 720w, assets/img/venue-960.jpg 960w"
+                   sizes="(min-width: 520px) 412px, calc(100vw - 5rem)"
+                   width="960" height="720" loading="lazy" decoding="async"
+                   alt="The Cozy Cabin: a modern three-storey house beside a large swimming pool, with garden seating under umbrellas">
+            </picture>
           </figure>
 
           <div class="tear tear--notch" aria-hidden="true"></div>
